@@ -275,6 +275,11 @@ a{
     height: 30px;
     
 }
+      footer{
+
+    margin-top: 35vh;
+
+  }
 .buttonsbox{
   display: inline;
 }
@@ -364,6 +369,11 @@ a, .btn {
   padding-top: 0;
   
 }
+      footer{
+
+    margin-top: 35vh;
+
+  }
 .icon {
   padding: 8px;
   width: 80%;
