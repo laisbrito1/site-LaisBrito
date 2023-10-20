@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+body{
+  width: 100vw;
+}
+
+#container {
+
+    position: relative;
+  }
+  
+  #container figcaption {
+    position: absolute;
+    font-family: system-ui;
+    font-weight:800;
+    top: 145px;
+    justify-content: center;
+    font-size: 8em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px black;
+  }
+
+.buttonsbox{
+    display: flex;
+    justify-content: center ;
+
+}
+.text{
+  padding: 3vw;
+  width: 640px;
+  margin-right: 10vw;
+}
+.profile{
+  display: flex;
+  margin: 8px;
+
+}
+p,h5{
+  margin-left: 3px;
+  color: #fff;
+  font-family: system-ui;
+  font-size: 24px;
+}
+ 
+.card {
+  margin-left: 3%;
+  position: relative;
+  width: 400px;
+  height: 464px;
+  background-image: url("eu.jpg");
+  background-position-x: -2rem;
+  background-size: cover;
+  display: flex;
+  margin-top: 3vw;
+  flex-direction: column;
+  justify-content: end;
+
+  cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+  .btn {
+    margin-top: 3vw;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 220px;
+    height: 50px;
+      --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+      --border-width: .150em;
+      --curve-size: .5em;
+      --blur: 30px;
+      background: var(--border-color);
+      --color: #afffff;
+      color: var(--color);
+        /* use position: relative; so that BG is only for .btn */
+      position: relative;
+      isolation: isolate;
+      display: inline-grid;
+      place-content: center;
+      padding: .5em 1.5em;
+      font-size: 17px;
+      border: 0;
+      text-transform: uppercase;
+      box-shadow: 10px 10px 20px rgba(252, 169, 169, 0.6);
+      clip-path: polygon(
+                /* Top-left */
+                0% var(--curve-size),
+    
+                var(--curve-size) 0,
+                /* top-right */
+                100% 0,
+                100% calc(100% - var(--curve-size)),
+    
+                /* bottom-right 1 */
+                calc(100% - var(--curve-size)) 100%,
+                /* bottom-right 2 */
+                0 100%);
+      transition: color 250ms;
+    }
+    
+    .btn::after,
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+    
+    .btn::before {
+      background: var(--border-color);
+      background-size: 300% 300%;
+      animation: move-bg7234 5s ease infinite;
+      z-index: -2;
+    }
+    
+    @keyframes move-bg7234 {
+      0% {
+        background-position: 31% 0%
+      }
+    
+      50% {
+        background-position: 70% 100%
+      }
+    
+      100% {
+        background-position: 31% 0%
+      }
+    }
+    
+    .btn::after {
+      background: var(--colorbutton);
+      z-index: -1;
+      clip-path: polygon(
+                /* Top-left */
+                var(--border-width) 
+                calc(var(--curve-size) + var(--border-width) * .5),
+    
+                calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width)) 
+                var(--border-width),
+    
+                calc(100% - var(--border-width)) 
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+    
+                /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+                /* bottom-right 2 */
+                var(--border-width) calc(100% - var(--border-width)));
+      transition: clip-path 500ms;
+    }
+    
+    .btn:where(:hover, :focus)::after {
+      clip-path: polygon(
+                    /* Top-left */
+                    calc(100% - var(--border-width)) 
+    
+                    calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        
+                    calc(100% - var(--border-width))
+    
+                    var(--border-width),
+        
+                    /* top-right */
+                    calc(100% - var(--border-width))
+    
+                     var(--border-width),
+        
+                    calc(100% - var(--border-width)) 
+    
+                    calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+        
+                    /* bottom-right 1 */
+                    calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                    calc(100% - var(--border-width)),
+    
+                    /* bottom-right 2 */
+                    calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                    calc(100% - var(--border-width)));
+      transition: 200ms;
+    }
+    
+    .btn:where(:hover, :focus) {
+      color: #fff;
+    }
+    .cards{
+      width:100%;
+      display:grid;
+      grid-template-columns: repeat(8, auto);
+      grid-template-rows:100px 100px;
+      justify-content: stretch;
+      position: absolute;
+      margin-top: 1vw;
+      margin-right: 3vw;
+      padding-left: 17rem;
+      padding-top: 1rem;
+    
+      
+    }
+    
+    
+      
+      .icon {
+        padding: 8px;
+        width: 80%;
+        height: 120px;
+        max-width: 120px;
+        background: linear-gradient(100deg, #5f94ff 0%, #ff48fb ,  #ffae00 90% , #fff);
+        border-radius: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.8s ease;
+        background-position: 0px;
+        background-size: 200px;
+        margin-bottom: 200px;
+        margin-right: 15px;
+      }
+    
+    
+      
+      .icon:hover{
+        background-position:150px;
+        transition: all 0.3s ease;
+      }
+      
+      .icon:hover svg path {
+       
+        transition: all 0.3s ease;
+      }
+      footer{
+        height: 80px;
+        justify-content: center;
+        text-align:center;
+        background-color: #0f0f0f;
+        margin-top: 15vw;
+        font-size: small;
+        color: #606060;
+      }
+
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 300px) {
+  body{
+    max-width: 450px;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  #container figcaption {
+    font-size: 34px;
+    position: absolute;
+    font-family: system-ui;
+    font-weight:800;
+    top: 45px;
+    justify-content: center;
+    
+  }
+  .btn {
+    margin-left: 0;
+    margin-right: 0;
+    padding:  0;
+    width: 60px;
+    height: 30px;
+    
+}
+.buttonsbox{
+  display: inline;
+}
+a, .btn {
+  font-size: 10px;
+}
+.cards{
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows:100px 100px;
+  justify-content: flex-start;
+  position: absolute;
+  margin-top: 1vw;
+  margin-right: 0;
+  margin-left: 18px;
+  padding-left: 0;
+  padding-top: 0;
+  
+}
+.icon {
+  padding: 8px;
+  width: 80%;
+  height: 80px;
+  max-width: 80px;
+  background: linear-gradient(100deg, #5f94ff 0%, #ff48fb ,  #ffae00 90% , #fff);
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  margin-bottom: 200px;
+  margin-right: 15px;
+}
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  body{
+    max-width: 450px;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  #container figcaption {
+    font-size: 34px;
+    position: absolute;
+    font-family: system-ui;
+    font-weight:800;
+    top: 45px;
+    justify-content: center;
+    
+  }
+  .btn {
+    
+    margin-left: 0;
+    margin-right: 8px;
+    padding:  10px;
+    width: 80px;
+    height: 30px;
+    
+}
+.buttonsbox{
+  display: inline;
+}
+a, .btn {
+  font-size: 10px;
+}
+.cards{
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows:100px 100px;
+  justify-content: flex-start;
+  position: absolute;
+  margin-top: 1vw;
+  margin-right: 0;
+  margin-left: 18px;
+  padding-left: 0;
+  padding-top: 0;
+  
+}
+.icon {
+  padding: 8px;
+  width: 80%;
+  height: 80px;
+  max-width: 80px;
+  background: linear-gradient(100deg, #5f94ff 0%, #ff48fb ,  #ffae00 90% , #fff);
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  margin-bottom: 200px;
+  margin-right: 15px;
+}
+
+.text{
+  padding: 3vw;
+  width: 640px;
+  margin-right: 10vw;
+}
+
+
+  }
+
