@@ -275,6 +275,13 @@ a{
     height: 30px;
     
 }
+    p,h5{
+  margin-left: 3px;
+  color: #fff;
+  font-family: system-ui;
+  font-size: 18px;
+}
+ 
       footer{
 
     margin-top: 35vh;
@@ -331,6 +338,13 @@ a, .btn {
 
 
   }
+    p,h5{
+  margin-left: 3px;
+  color: #fff;
+  font-family: system-ui;
+  font-size: 18px;
+}
+ 
   #container figcaption {
     font-size: 34px;
     position: absolute;
