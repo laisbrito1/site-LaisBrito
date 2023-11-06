@@ -24,16 +24,26 @@ body{
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 5px black;
   }
-
+.linktext{
+  margin-left: 3px;
+  color: #f76ae4;
+  font-family: system-ui;
+  font-size: 24px;
+}
+.linktext:hover{
+  color: #d11fb9;
+  
+}
 .buttonsbox{
     display: flex;
     justify-content: center ;
 
 }
 .text{
+  margin-top: 4vw;
   padding: 3vw;
-  width: 640px;
-  margin-right: 10vw;
+  width: 840px;
+  margin-right: 6vw;
 }
 .profile{
   display: flex;
