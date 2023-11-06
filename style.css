@@ -29,10 +29,17 @@ body{
   color: #f76ae4;
   font-family: system-ui;
   font-size: 24px;
+ 
 }
 .linktext:hover{
   color: #d11fb9;
   
+}
+li{
+  margin-left: 3px;
+  color: #f76ae4;
+  font-family: system-ui;
+  font-size: 24px;
 }
 .buttonsbox{
     display: flex;
