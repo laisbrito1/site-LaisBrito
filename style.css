@@ -275,6 +275,9 @@ a{
 
 
   }
+    a, li{
+          font-size: 34px;}
+    
   #container figcaption {
     font-size: 34px;
     position: absolute;
@@ -355,6 +358,8 @@ a, .btn {
 
 
   }
+        a, li{
+          font-size: 34px;}
     p,h5{
   margin-left: 3px;
   color: #fff;
